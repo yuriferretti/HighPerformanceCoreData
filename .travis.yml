@@ -1,2 +1,2 @@
 language: objective-c
-script: xctool -workspace HighPerformanceCoreData.xcworkspace -scheme HighPerformanceCoreData test
+script: xctool -workspace HighPerformanceCoreData.xcworkspace -scheme HighPerformanceCoreData -sdk iphonesimulator test
