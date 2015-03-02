@@ -1,5 +1,2 @@
 language: objective-c
-before_install:
-    - brew update
-
 script: xctool -workspace HighPerformanceCoreData.xcworkspace -scheme HighPerformanceCoreData test
