@@ -1,0 +1,464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		60263E731A9F830F00022825 /* AbstractImportManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60263E721A9F830F00022825 /* AbstractImportManagedObject.m */; };
+		605E72921AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */; };
+		60C9DA381A9F5A4700C7C945 /* libHighPerformanceCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */; };
+		60C9DA481A9F5A9C00C7C945 /* MultiContextCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9DA471A9F5A9C00C7C945 /* MultiContextCoreDataStack.m */; };
+		60C9DA4D1A9F5C6700C7C945 /* HighPerformanceImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9DA4C1A9F5C6700C7C945 /* HighPerformanceImportOperation.m */; };
+		98349907747A3C81CD988E8D /* libPods-HighPerformanceCoreDataTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A732EF0D4594ECE999F0AC2 /* libPods-HighPerformanceCoreDataTests.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		60C9DA391A9F5A4700C7C945 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 60C9DA241A9F5A4600C7C945 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60C9DA2B1A9F5A4600C7C945;
+			remoteInfo = HighPerformanceCoreData;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		60C9DA2A1A9F5A4600C7C945 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5A732EF0D4594ECE999F0AC2 /* libPods-HighPerformanceCoreDataTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HighPerformanceCoreDataTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5AE73BC729D062636CDB94E8 /* Pods-HighPerformanceCoreDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighPerformanceCoreDataTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HighPerformanceCoreDataTests/Pods-HighPerformanceCoreDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60263E711A9F830F00022825 /* AbstractImportManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractImportManagedObject.h; sourceTree = "<group>"; };
+		60263E721A9F830F00022825 /* AbstractImportManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractImportManagedObject.m; sourceTree = "<group>"; };
+		605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiContextCoreDataStackTestCase.m; sourceTree = "<group>"; };
+		60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHighPerformanceCoreData.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C9DA371A9F5A4700C7C945 /* HighPerformanceCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HighPerformanceCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		60C9DA3D1A9F5A4700C7C945 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60C9DA461A9F5A9C00C7C945 /* MultiContextCoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiContextCoreDataStack.h; sourceTree = "<group>"; };
+		60C9DA471A9F5A9C00C7C945 /* MultiContextCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiContextCoreDataStack.m; sourceTree = "<group>"; };
+		60C9DA4B1A9F5C6700C7C945 /* HighPerformanceImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighPerformanceImportOperation.h; sourceTree = "<group>"; };
+		60C9DA4C1A9F5C6700C7C945 /* HighPerformanceImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighPerformanceImportOperation.m; sourceTree = "<group>"; };
+		C8DF35DDC3F5A8F05C4904B6 /* Pods-HighPerformanceCoreDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighPerformanceCoreDataTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HighPerformanceCoreDataTests/Pods-HighPerformanceCoreDataTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		60C9DA291A9F5A4600C7C945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C9DA341A9F5A4700C7C945 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C9DA381A9F5A4700C7C945 /* libHighPerformanceCoreData.a in Frameworks */,
+				98349907747A3C81CD988E8D /* libPods-HighPerformanceCoreDataTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		276BE16BA276359108000203 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A732EF0D4594ECE999F0AC2 /* libPods-HighPerformanceCoreDataTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F152FA4F363F73D83CCC94E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5AE73BC729D062636CDB94E8 /* Pods-HighPerformanceCoreDataTests.debug.xcconfig */,
+				C8DF35DDC3F5A8F05C4904B6 /* Pods-HighPerformanceCoreDataTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		60C9DA231A9F5A4600C7C945 = {
+			isa = PBXGroup;
+			children = (
+				60C9DA2E1A9F5A4600C7C945 /* HighPerformanceCoreData */,
+				60C9DA3B1A9F5A4700C7C945 /* HighPerformanceCoreDataTests */,
+				60C9DA2D1A9F5A4600C7C945 /* Products */,
+				3F152FA4F363F73D83CCC94E /* Pods */,
+				276BE16BA276359108000203 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		60C9DA2D1A9F5A4600C7C945 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */,
+				60C9DA371A9F5A4700C7C945 /* HighPerformanceCoreDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		60C9DA2E1A9F5A4600C7C945 /* HighPerformanceCoreData */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA4A1A9F5C5B00C7C945 /* Model */,
+				60C9DA491A9F5C3100C7C945 /* Core data stack */,
+			);
+			path = HighPerformanceCoreData;
+			sourceTree = "<group>";
+		};
+		60C9DA3B1A9F5A4700C7C945 /* HighPerformanceCoreDataTests */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA3C1A9F5A4700C7C945 /* Supporting Files */,
+				605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */,
+			);
+			path = HighPerformanceCoreDataTests;
+			sourceTree = "<group>";
+		};
+		60C9DA3C1A9F5A4700C7C945 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA3D1A9F5A4700C7C945 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		60C9DA491A9F5C3100C7C945 /* Core data stack */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA461A9F5A9C00C7C945 /* MultiContextCoreDataStack.h */,
+				60C9DA471A9F5A9C00C7C945 /* MultiContextCoreDataStack.m */,
+			);
+			name = "Core data stack";
+			sourceTree = "<group>";
+		};
+		60C9DA4A1A9F5C5B00C7C945 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				60C9DA4B1A9F5C6700C7C945 /* HighPerformanceImportOperation.h */,
+				60C9DA4C1A9F5C6700C7C945 /* HighPerformanceImportOperation.m */,
+				60263E711A9F830F00022825 /* AbstractImportManagedObject.h */,
+				60263E721A9F830F00022825 /* AbstractImportManagedObject.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60C9DA2B1A9F5A4600C7C945 /* HighPerformanceCoreData */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C9DA401A9F5A4700C7C945 /* Build configuration list for PBXNativeTarget "HighPerformanceCoreData" */;
+			buildPhases = (
+				60C9DA281A9F5A4600C7C945 /* Sources */,
+				60C9DA291A9F5A4600C7C945 /* Frameworks */,
+				60C9DA2A1A9F5A4600C7C945 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HighPerformanceCoreData;
+			productName = HighPerformanceCoreData;
+			productReference = 60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		60C9DA361A9F5A4700C7C945 /* HighPerformanceCoreDataTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 60C9DA431A9F5A4700C7C945 /* Build configuration list for PBXNativeTarget "HighPerformanceCoreDataTests" */;
+			buildPhases = (
+				90DB22F3349D4A8C3F19F7A7 /* Check Pods Manifest.lock */,
+				60C9DA331A9F5A4700C7C945 /* Sources */,
+				60C9DA341A9F5A4700C7C945 /* Frameworks */,
+				60C9DA351A9F5A4700C7C945 /* Resources */,
+				6A144F8D05628ACDB381376E /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				60C9DA3A1A9F5A4700C7C945 /* PBXTargetDependency */,
+			);
+			name = HighPerformanceCoreDataTests;
+			productName = HighPerformanceCoreDataTests;
+			productReference = 60C9DA371A9F5A4700C7C945 /* HighPerformanceCoreDataTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		60C9DA241A9F5A4600C7C945 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Yuri Ferretti";
+				TargetAttributes = {
+					60C9DA2B1A9F5A4600C7C945 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					60C9DA361A9F5A4700C7C945 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+				};
+			};
+			buildConfigurationList = 60C9DA271A9F5A4600C7C945 /* Build configuration list for PBXProject "HighPerformanceCoreData" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 60C9DA231A9F5A4600C7C945;
+			productRefGroup = 60C9DA2D1A9F5A4600C7C945 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				60C9DA2B1A9F5A4600C7C945 /* HighPerformanceCoreData */,
+				60C9DA361A9F5A4700C7C945 /* HighPerformanceCoreDataTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		60C9DA351A9F5A4700C7C945 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6A144F8D05628ACDB381376E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HighPerformanceCoreDataTests/Pods-HighPerformanceCoreDataTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90DB22F3349D4A8C3F19F7A7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		60C9DA281A9F5A4600C7C945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60C9DA4D1A9F5C6700C7C945 /* HighPerformanceImportOperation.m in Sources */,
+				60C9DA481A9F5A9C00C7C945 /* MultiContextCoreDataStack.m in Sources */,
+				60263E731A9F830F00022825 /* AbstractImportManagedObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		60C9DA331A9F5A4700C7C945 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				605E72921AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		60C9DA3A1A9F5A4700C7C945 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60C9DA2B1A9F5A4600C7C945 /* HighPerformanceCoreData */;
+			targetProxy = 60C9DA391A9F5A4700C7C945 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		60C9DA3E1A9F5A4700C7C945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		60C9DA3F1A9F5A4700C7C945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		60C9DA411A9F5A4700C7C945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		60C9DA421A9F5A4700C7C945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		60C9DA441A9F5A4700C7C945 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE73BC729D062636CDB94E8 /* Pods-HighPerformanceCoreDataTests.debug.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HighPerformanceCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		60C9DA451A9F5A4700C7C945 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8DF35DDC3F5A8F05C4904B6 /* Pods-HighPerformanceCoreDataTests.release.xcconfig */;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HighPerformanceCoreDataTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		60C9DA271A9F5A4600C7C945 /* Build configuration list for PBXProject "HighPerformanceCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C9DA3E1A9F5A4700C7C945 /* Debug */,
+				60C9DA3F1A9F5A4700C7C945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60C9DA401A9F5A4700C7C945 /* Build configuration list for PBXNativeTarget "HighPerformanceCoreData" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C9DA411A9F5A4700C7C945 /* Debug */,
+				60C9DA421A9F5A4700C7C945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		60C9DA431A9F5A4700C7C945 /* Build configuration list for PBXNativeTarget "HighPerformanceCoreDataTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				60C9DA441A9F5A4700C7C945 /* Debug */,
+				60C9DA451A9F5A4700C7C945 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 60C9DA241A9F5A4600C7C945 /* Project object */;
+}
