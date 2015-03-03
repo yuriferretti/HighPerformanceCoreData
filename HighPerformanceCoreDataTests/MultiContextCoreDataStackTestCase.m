@@ -21,6 +21,7 @@ describe(@"MultiContextCoreDataStack Tests", ^{
     beforeAll(^{
         
         stack = [MultiContextCoreDataStack sharedStack];
+        stack.storeName = @"Test-store";
     });
     
     it(@"Stack can be created", ^{
@@ -32,6 +33,18 @@ describe(@"MultiContextCoreDataStack Tests", ^{
     it(@"Stack is the same as shared stack", ^{
         
         expect(stack).to.equal([MultiContextCoreDataStack sharedStack]);
+        
+    });
+    
+    it(@"Main queue MOC should be created", ^{
+        
+        expect(stack.managedObjectContext).toNot.beNil();
+        
+    });
+    
+    it(@"Private queue MOC should be created", ^{
+        
+        expect([stack newPrivateManagedObjectContext]).toNot.beNil();
         
     });
     

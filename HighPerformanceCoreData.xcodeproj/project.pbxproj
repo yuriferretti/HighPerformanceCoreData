@@ -12,6 +12,10 @@
 		60C9DA381A9F5A4700C7C945 /* libHighPerformanceCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */; };
 		60C9DA481A9F5A9C00C7C945 /* MultiContextCoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9DA471A9F5A9C00C7C945 /* MultiContextCoreDataStack.m */; };
 		60C9DA4D1A9F5C6700C7C945 /* HighPerformanceImportOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 60C9DA4C1A9F5C6700C7C945 /* HighPerformanceImportOperation.m */; };
+		60E544401AA5E1A6005D6C6E /* Test-store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60E5443E1AA5E1A6005D6C6E /* Test-store.xcdatamodeld */; };
+		60E544411AA5E1A6005D6C6E /* Test-store.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60E5443E1AA5E1A6005D6C6E /* Test-store.xcdatamodeld */; };
+		60E5444C1AA5EFCF005D6C6E /* FailingTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5444A1AA5EFCF005D6C6E /* FailingTestEntity.m */; };
+		60E5444E1AA5F08F005D6C6E /* EntityTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 60E5444D1AA5F08F005D6C6E /* EntityTestCase.m */; };
 		98349907747A3C81CD988E8D /* libPods-HighPerformanceCoreDataTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A732EF0D4594ECE999F0AC2 /* libPods-HighPerformanceCoreDataTests.a */; };
 /* End PBXBuildFile section */
 
@@ -50,6 +54,10 @@
 		60C9DA471A9F5A9C00C7C945 /* MultiContextCoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiContextCoreDataStack.m; sourceTree = "<group>"; };
 		60C9DA4B1A9F5C6700C7C945 /* HighPerformanceImportOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HighPerformanceImportOperation.h; sourceTree = "<group>"; };
 		60C9DA4C1A9F5C6700C7C945 /* HighPerformanceImportOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HighPerformanceImportOperation.m; sourceTree = "<group>"; };
+		60E5443F1AA5E1A6005D6C6E /* Test-store.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Test-store.xcdatamodel"; sourceTree = "<group>"; };
+		60E544491AA5EFCF005D6C6E /* FailingTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailingTestEntity.h; sourceTree = "<group>"; };
+		60E5444A1AA5EFCF005D6C6E /* FailingTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailingTestEntity.m; sourceTree = "<group>"; };
+		60E5444D1AA5F08F005D6C6E /* EntityTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntityTestCase.m; sourceTree = "<group>"; };
 		C8DF35DDC3F5A8F05C4904B6 /* Pods-HighPerformanceCoreDataTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighPerformanceCoreDataTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HighPerformanceCoreDataTests/Pods-HighPerformanceCoreDataTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -122,8 +130,9 @@
 		60C9DA3B1A9F5A4700C7C945 /* HighPerformanceCoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				60E5443D1AA5E180005D6C6E /* Core data  */,
 				60C9DA3C1A9F5A4700C7C945 /* Supporting Files */,
-				605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */,
+				60E5443C1AA5E171005D6C6E /* Test Cases */,
 			);
 			path = HighPerformanceCoreDataTests;
 			sourceTree = "<group>";
@@ -154,6 +163,33 @@
 				60263E721A9F830F00022825 /* AbstractImportManagedObject.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		60E5443C1AA5E171005D6C6E /* Test Cases */ = {
+			isa = PBXGroup;
+			children = (
+				60E5444D1AA5F08F005D6C6E /* EntityTestCase.m */,
+				605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */,
+			);
+			name = "Test Cases";
+			sourceTree = "<group>";
+		};
+		60E5443D1AA5E180005D6C6E /* Core data  */ = {
+			isa = PBXGroup;
+			children = (
+				60E544441AA5EC52005D6C6E /* Entities */,
+				60E5443E1AA5E1A6005D6C6E /* Test-store.xcdatamodeld */,
+			);
+			name = "Core data ";
+			sourceTree = "<group>";
+		};
+		60E544441AA5EC52005D6C6E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				60E544491AA5EFCF005D6C6E /* FailingTestEntity.h */,
+				60E5444A1AA5EFCF005D6C6E /* FailingTestEntity.m */,
+			);
+			name = Entities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				60C9DA4D1A9F5C6700C7C945 /* HighPerformanceImportOperation.m in Sources */,
+				60E544401AA5E1A6005D6C6E /* Test-store.xcdatamodeld in Sources */,
 				60C9DA481A9F5A9C00C7C945 /* MultiContextCoreDataStack.m in Sources */,
 				60263E731A9F830F00022825 /* AbstractImportManagedObject.m in Sources */,
 			);
@@ -289,7 +326,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60E5444E1AA5F08F005D6C6E /* EntityTestCase.m in Sources */,
 				605E72921AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m in Sources */,
+				60E544411AA5E1A6005D6C6E /* Test-store.xcdatamodeld in Sources */,
+				60E5444C1AA5EFCF005D6C6E /* FailingTestEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -459,6 +499,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		60E5443E1AA5E1A6005D6C6E /* Test-store.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				60E5443F1AA5E1A6005D6C6E /* Test-store.xcdatamodel */,
+			);
+			currentVersion = 60E5443F1AA5E1A6005D6C6E /* Test-store.xcdatamodel */;
+			path = "Test-store.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 60C9DA241A9F5A4600C7C945 /* Project object */;
 }

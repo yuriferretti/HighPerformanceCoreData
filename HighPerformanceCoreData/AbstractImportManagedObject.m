@@ -38,9 +38,7 @@
 
 + (NSString *)entityName {
     
-    [NSException raise:NSInternalInconsistencyException format:@"%@ %s must be implemented by a subclass", NSStringFromClass([AbstractImportManagedObject class]), __PRETTY_FUNCTION__];
-    
-    return nil;
+    return NSStringFromClass([self class]);
 }
 
 + (NSString *)entityGUID {

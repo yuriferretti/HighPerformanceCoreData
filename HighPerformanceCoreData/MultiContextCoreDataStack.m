@@ -47,8 +47,30 @@ NSString * const kHighPerformanceCoreDataStackDidInitialize = @"NOTIFICATION_COR
     [[NSNotificationCenter defaultCenter]removeObserver:self];
 }
 
++ (BOOL) isTest {
+    
+    return NSClassFromString(@"XCTestCase") != nil ;
+}
+
 - (NSURL *)applicationDocumentsDirectory {
-    return [[[NSFileManager defaultManager]URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask]lastObject];
+    
+    NSString *path = nil;
+    
+    // Running project -> path inside the Document folder
+    if (![MultiContextCoreDataStack isTest]) {
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *docsPath = [paths objectAtIndex:0];
+        path = [docsPath stringByAppendingPathComponent:_storeName];
+        
+    // Project is runing in unit testing
+    } else {
+    
+        NSString *directory = [[NSFileManager defaultManager] currentDirectoryPath];
+        path = [directory stringByAppendingPathComponent:_storeName];
+    }
+    
+    return [NSURL fileURLWithPath:path];
 }
 
 #pragma mark - Core Data Methods
@@ -110,11 +132,14 @@ NSString * const kHighPerformanceCoreDataStackDidInitialize = @"NOTIFICATION_COR
 }
 
 - (NSManagedObjectModel *)managedObjectModel {
+   
     if (_managedObjectModel != nil)
     {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:self.storeName withExtension:@"momd"];
+    
+    NSBundle *currentBundle = [MultiContextCoreDataStack isTest] ? [NSBundle bundleWithIdentifier:@"com.yuriferretti.HighPerformanceCoreDataTests"] : [NSBundle mainBundle];
+    NSURL *modelURL = [currentBundle URLForResource:self.storeName withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -127,8 +152,9 @@ NSString * const kHighPerformanceCoreDataStackDidInitialize = @"NOTIFICATION_COR
             return _persistentStoreCoordinator;
         }
         
-        NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@".sqlite"];
+        NSString *storePath = [[[self applicationDocumentsDirectory]path]stringByAppendingPathExtension:@"sqlite"];
         
+        NSURL *storeURL = [NSURL fileURLWithPath:storePath];
         _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];
         
         if (_persistentStoreCoordinator == nil) {
