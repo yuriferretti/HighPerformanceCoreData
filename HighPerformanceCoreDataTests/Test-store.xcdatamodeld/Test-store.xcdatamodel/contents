@@ -3,7 +3,11 @@
     <entity name="FailingTestEntity" representedClassName="FailingTestEntity" syncable="YES">
         <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="PassingTestEntity" representedClassName="PassingTestEntity" syncable="YES">
+        <attribute name="identifier" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="FailingTestEntity" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="PassingTestEntity" positionX="-63" positionY="-9" width="128" height="60"/>
     </elements>
 </model>

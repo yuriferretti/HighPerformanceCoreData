@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		601582D11AA62B6E0097BBBF /* PassingTestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 601582CF1AA62B4D0097BBBF /* PassingTestEntity.m */; };
 		60263E731A9F830F00022825 /* AbstractImportManagedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 60263E721A9F830F00022825 /* AbstractImportManagedObject.m */; };
 		605E72921AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */; };
 		60C9DA381A9F5A4700C7C945 /* libHighPerformanceCoreData.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 60C9DA2C1A9F5A4600C7C945 /* libHighPerformanceCoreData.a */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		5A732EF0D4594ECE999F0AC2 /* libPods-HighPerformanceCoreDataTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HighPerformanceCoreDataTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AE73BC729D062636CDB94E8 /* Pods-HighPerformanceCoreDataTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HighPerformanceCoreDataTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HighPerformanceCoreDataTests/Pods-HighPerformanceCoreDataTests.debug.xcconfig"; sourceTree = "<group>"; };
+		601582CE1AA62B4D0097BBBF /* PassingTestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PassingTestEntity.h; path = ../PassingTestEntity.h; sourceTree = "<group>"; };
+		601582CF1AA62B4D0097BBBF /* PassingTestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PassingTestEntity.m; path = ../PassingTestEntity.m; sourceTree = "<group>"; };
 		60263E711A9F830F00022825 /* AbstractImportManagedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractImportManagedObject.h; sourceTree = "<group>"; };
 		60263E721A9F830F00022825 /* AbstractImportManagedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractImportManagedObject.m; sourceTree = "<group>"; };
 		605E72911AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiContextCoreDataStackTestCase.m; sourceTree = "<group>"; };
@@ -186,6 +189,8 @@
 		60E544441AA5EC52005D6C6E /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				601582CE1AA62B4D0097BBBF /* PassingTestEntity.h */,
+				601582CF1AA62B4D0097BBBF /* PassingTestEntity.m */,
 				60E544491AA5EFCF005D6C6E /* FailingTestEntity.h */,
 				60E5444A1AA5EFCF005D6C6E /* FailingTestEntity.m */,
 			);
@@ -326,6 +331,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				601582D11AA62B6E0097BBBF /* PassingTestEntity.m in Sources */,
 				60E5444E1AA5F08F005D6C6E /* EntityTestCase.m in Sources */,
 				605E72921AA3E5FE00A97772 /* MultiContextCoreDataStackTestCase.m in Sources */,
 				60E544411AA5E1A6005D6C6E /* Test-store.xcdatamodeld in Sources */,
